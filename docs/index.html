@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGHVE - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-icons@latest/dist/style.css">
+    <style>
+        body {
+            background-color: #0A0F1E;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            position: relative;
+        }
+        .hex-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background-image: url('path-to-hex-grid.svg'); /* Placeholder for hexagonal grid background */
+        }
+        .btn {
+            background-color: #00F5FF;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 0.5em;
+            transition: box-shadow 0.3s;
+        }
+        .btn:hover {
+            box-shadow: 0 0 20px #00F5FF;
+        }
+    </style>
+</head>
+<body>
+    <div class="hex-grid"></div>
+    <header class="flex justify-between items-center p-4">
+        <img src="dighve-logo.png" alt="DIGHVE Logo" class="h-10">
+        <button class="btn">Contact</button>
+    </header>
+    <main class="flex flex-col items-center mt-10">
+        <h1 class="text-4xl font-bold">Solving Complexity. Scaling Opportunity.</h1>
+        <p class="text-xl mt-2">Dig Deep. Dive with Hive.</p>
+        <div class="mt-10 bg-gray-800 rounded p-6 shadow-lg">
+            <h2 class="text-2xl font-semibold">Case Study: Geospatial Infrastructure for Outmeets</h2>
+            <ul class="mt-4 list-disc list-inside">
+                <li>Point 1 about Geospatial Infrastructure.</li>
+                <li>Point 2 about Geospatial Infrastructure.</li>
+                <li>Point 3 about Geospatial Infrastructure.</li>
+            </ul>
+        </div>
+        <section class="flex justify-evenly mt-10 space-x-4">
+            <div class="text-center">
+                <lucide-icon class="w-16 h-16" icon="dig"></lucide-icon>
+                <h3>The Dig</h3>
+            </div>
+            <div class="text-center">
+                <lucide-icon class="w-16 h-16" icon="dive"></lucide-icon>
+                <h3>The Dive</h3>
+            </div>
+            <div class="text-center">
+                <lucide-icon class="w-16 h-16" icon="hive"></lucide-icon>
+                <h3>With Hive</h3>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-4">
+        <p>&copy; 2026 DIGHVE. All rights reserved.</p>
+        <p>Contact: <a href="mailto:dighve@outmeets.com" class="text-blue-400">dighve@outmeets.com</a></p>
+        <p><a href="https://github.com/Dighve" class="text-blue-400">GitHub Profile</a></p>
+    </footer>
+</body>
+</html>
